@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Noto Sans",Helvetica,"Helvetica Neue",Arial,sans-serif;
+}
+
+/* HEADER */
+.small-header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  line-height: 60px;
+  padding: 0 20px;
+  font-size: 0.5em;
+}
+
+.small-header a {
+  text-decoration: none;
+  color: #999;
+}
+
+.small-header a:hover {
+  color: black;
+}
+
+
+/* CARDS */
+main {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
