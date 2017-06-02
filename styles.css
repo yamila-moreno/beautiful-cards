@@ -31,29 +31,25 @@ body {
 /* CARDS */
 main {
   background-color: #f2f2f2;
-  padding: 0;
+  padding: 20px 10px 20px 10px;
   display: grid;
-  max-width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-auto-flow: dense;
 }
 
 @media(min-width: 700px){
   main {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media(min-width: 1000px){
   main {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media(min-width: 1250px){
   main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -81,13 +77,16 @@ main {
   transform: scale(1.1);
 }
 
+.card>a img:hover+h2 {
+  transform: translateY(140%);
+}
 
 article h2 {
   position: absolute;
   bottom: 0px;
   left: 0px;
   color: white;
-  margin: 0 20px 20px 20px;
+  margin: 0 20px 3px 20px;
   font-weight: 400;
   transition: transform 0.5s ease;
   z-index: 1;
@@ -98,6 +97,7 @@ article h2 {
   display: flex;
   justify-content: space-between;
 }
+
 
 .card p,
 .card .details {
@@ -114,3 +114,18 @@ article h2 {
   color: black;
 }
 
+/* SPRITES */
+.icons {
+  background-image: url('img/font-awesome.svg');
+  background-repeat: no-repeat;
+}
+
+.icons.calendar {
+  height: 10px;
+  background-position: -5px -5px;
+}
+
+.icons.tags {
+  height: 10px;
+  background-position: -5px -5px;
+}
