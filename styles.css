@@ -103,6 +103,7 @@ article h2 {
 .card .details {
   padding: 15px 20px;
   color: #999;
+  font-size: 0.85rem;
 }
 
 .details .tags a {
