@@ -1,4 +1,0 @@
-<svg version="1.1" id="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 1024 1024">
-    <path d="M768 128v-128h-128v128h-256v-128h-128v128h-256v128h1024v-128zM128 640h768v128h-768zM128 384h768v128h-768zM128 1024h640l128-128h-768z"></path>
-</svg>

@@ -8,7 +8,6 @@ body {
   font-family:"Noto Sans",Helvetica,"Helvetica Neue",Arial,sans-serif;
 }
 
-
 /* HEADER */
 .small-header {
   display: flex;
@@ -115,18 +114,16 @@ article h2 {
   color: black;
 }
 
-/* SPRITES */
-.icons {
-  background-image: url('img/font-awesome.svg');
-  background-repeat: no-repeat;
+.time, .tags {
+  display: flex;
+  align-items: center;
 }
 
-.icons.calendar {
-  height: 10px;
-  background-position: -5px -5px;
-}
-
-.icons.tags {
-  height: 10px;
-  background-position: -5px -5px;
+.rss svg,
+.time svg,
+.tags svg {
+  width: 15px;
+  height: 15px;
+  fill: #999;
+  margin-right: 5px;
 }
