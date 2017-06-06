@@ -3,28 +3,78 @@
   <head>
     <meta charset='UTF-8'/>
     <title>Viajes Dendarii</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header>
-      <h1><a href="#">Viajes dendarii</a></h1>
-      <a href="#" class="rss">#</a>
-    </header>
-    <!-- problema: el outline se queja si no pongo un heading aquí -->
-    <article>
-      <header>
-        <h1>Portugal 2017: Sintra</h1>
-        <img src="https://c1.staticflickr.com/5/4183/33608590294_7fc813d211_c.jpg" alt="Descripción de la imagen" />
-        <details>
-          <time datetime="">04-05-2017</time>
-          <div class="author">yami</div>
-          <div class="tags"><a href="#">Sintra</a>, <a href="#">Portugal</a></div>
-        </details>
+    <header class="big-header" style="background-image: url(https://c1.staticflickr.com/1/701/31671763184_fdffda7cc9_c.jpg)">
+
+      <header class="small-header">
+        <h1><a class="main-title" href="#">Viajes dendarii</a></h1>
+        <a href="/rss" class="rss">
+          <svg>
+            <use xlink:href="img/font-awesome.svg#icon-rss-square"></use>
+          </svg>
+        </a>
       </header>
-      <p>Textos</p>
-      <figure>
-        <img src="" alt="Descripción de la imagen"/>
-        <figcaption>Fotos</figcaption>
+
+      <header class="article">
+        <h2>Portugal 2017: Sintra</h2>
+        <section class="details">
+          <time class="time" datetime="">
+            <svg>
+              <use xlink:href="img/font-awesome.svg#icon-calendar-o"></use>
+            </svg>
+            04/05/2017
+          </time>
+          <div class="tags">
+            <svg>
+              <use xlink:href="img/font-awesome.svg#icon-tags"></use>
+            </svg>
+            <a href="#">Évora</a>, <a href="#">Portugal</a>
+          </div>
+        </section>
+      </header>
+
+    </header> <!-- big header -->
+
+    <article>
+      <h3>Title nivel superior dentro del artículo</h3>
+      <h2>Title nivel 2 dentro del artículo</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus felis nisl, et egestas est congue sed. Cras mattis id dolor at hendrerit. Vestibulum quis ornare lectus. Integer sit amet nunc suscipit, dictum eros ut, maximus purus. Ut vitae posuere mi. Duis ac magna vitae quam molestie imperdiet. Pellentesque sit amet massa pellentesque, volutpat dolor sed, facilisis sem. Nunc ut vulputate dui, id tempus urna. Etiam in tincidunt tellus, vel cursus arcu. Suspendisse facilisis lacus quis nibh volutpat, in scelerisque ante tincidunt. Praesent eget erat aliquet lectus suscipit dignissim id eu ligula.</p>
+
+      <p>Nullam posuere facilisis metus, vitae aliquet elit sagittis nec. Ut massa ex, maximus accumsan diam sit amet, sagittis ultrices ex. Vestibulum ut felis id tortor tempor finibus. Vivamus ligula urna, facilisis quis ipsum eu, porta aliquet velit. Vestibulum cursus odio eget nisl convallis, id convallis libero consectetur. Donec maximus rhoncus leo, eu hendrerit lectus interdum vitae. In tortor felis, gravida nec posuere id, tincidunt sit amet lorem. Ut ultricies finibus nibh at placerat. Nullam maximus pharetra felis, at pulvinar dui pharetra dictum. Donec porta, magna non finibus auctor, felis dolor viverra ligula, non semper massa ante ac neque. Curabitur ac sem egestas, scelerisque nibh id, commodo orci. Vestibulum non odio eget urna porta hendrerit.</p>
+
+      <p>Aquí pongo varios enlaces para darles estilos</p>
+
+      <p>Listas</p>
+      <ul>
+        <li>Foo</li>
+        <li>Bar</li>
+      </ul>
+      <ol>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+      </ol>
+
+      <blockquote>Texto resaltado, alguna nota. Misma letra con una barra vertical gris a la izquierda</blockquote>
+
+      <q>Una cita de alguien que quiero resaltar. <cite>Winston Churchill</cite></q>
+
+      <hr> <!-- línea de corte -->
+
+      <figure> <!-- foto normal -->
+        <img src="https://c1.staticflickr.com/1/701/31671763184_fdffda7cc9_c.jpg" alt="descripción de la foto"/>
+        <figcaption>tontakismo fotil</figcaption>
       </figure>
+
+      <figure> <!-- foto panorámica -->
+        <img src="https://c1.staticflickr.com/1/701/31671763184_fdffda7cc9_c.jpg" alt="descripción de la foto"/>
+        <figcaption>tontakismo fotil</figcaption>
+      </figure>
+
     </article>
     <footer></footer>
   </body>

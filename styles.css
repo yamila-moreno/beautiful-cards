@@ -17,15 +17,17 @@ body {
   font-size: 0.5em;
 }
 
+.main-title {
+  color: #999;
+}
+
 .small-header a {
   text-decoration: none;
-  color: #999;
 }
 
 .small-header a:hover {
   color: black;
 }
-
 
 /* CARDS */
 main {
