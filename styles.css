@@ -8,8 +8,10 @@ body {
   font-family:"Noto Sans",Helvetica,"Helvetica Neue",Arial,sans-serif;
 }
 
-/* HEADER */
-.small-header {
+/* SMALL HEADER */
+.small-header.index,
+.small-header.tags,
+.small-header.post {
   display: flex;
   justify-content: space-between;
   line-height: 60px;
@@ -17,19 +19,41 @@ body {
   font-size: 0.5em;
 }
 
-.main-title {
+.small-header.index .main-title,
+.small-header.tags .main-title {
   color: #999;
+}
+
+.small-header.post .main-title {
+  color: #fff;
 }
 
 .small-header a {
   text-decoration: none;
 }
 
-.small-header a:hover {
+.small-header a.main-title:hover {
   color: black;
 }
 
-/* CARDS */
+/* BIG HEADER */
+.big-header {
+  position: relative;
+}
+
+.big-header img {
+  filter:brightness(0.4);
+  width: 100%;
+  height: 600px;
+}
+
+.big-header .small-header.post {
+  display:flex;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+/* CARDS: index y tags */
 main {
   background-color: #f2f2f2;
   padding: 20px 10px 20px 10px;
@@ -120,6 +144,8 @@ article h2 {
   display: flex;
   align-items: center;
 }
+
+/* SVG ICONS */
 
 .rss svg,
 .time svg,
