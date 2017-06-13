@@ -51,6 +51,33 @@ body {
   display:flex;
   justify-content: space-between;
   line-height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.big-header .article-title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-header .article-title .article-title-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.big-header .article-title .article-title-content .details {
+  animation-delay: .25s;
+}
+
+.big-header .article-title .article-title-content .tags {
+  animation-delay: .50s;
 }
 
 /* CARDS: index y tags */
@@ -106,7 +133,7 @@ main {
   transform: translateY(140%);
 }
 
-article h2 {
+article.card h2 {
   position: absolute;
   bottom: 0px;
   left: 0px;
